@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="Styles/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main_body">
+
+    <div class="left_container">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="right_container">
+      <div class="trail">
+        <p> <span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <form id="form" action="#" onsubmit="return display_error()">
+        <div class="text_field">
+          <input type="text" id="name" placeholder="First Name">
+          <div class="error_icon" id="ei_fname">
+            <img src="./images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <div class="error_text" id="et_fname">
+          <p>First name cannot be empty</p>
+        </div>
+
+        <div class="text_field">
+          <input type="text" id="lastname" placeholder="Last Name">
+          <div class="error_icon" id="ei_lname">
+            <img src="./images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <div class="error_text" id="et_lname">
+          <p>Last name cannot be empty</p>
+        </div>
+
+        <div class="text_field">
+          <input type="text" id="email" placeholder="Email Address">
+          <div class="error_icon" id="ei_email">
+            <img src="./images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <div class="error_text" id="et_email">
+          <p>Looks like this is not an email</p>
+        </div>
+
+        <div class="text_field">
+          <input type="password" id="password" placeholder="Password">
+          <div class="error_icon" id="ei_password">
+            <img src="./images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <div class="error_text" id="et_password">
+          <p>Password cannot be empty</p>
+        </div>
+        <button type="submit" id="btn">
+          Claim your free trial
+        </button>
+        <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/rajmhatre20/" target="_blank">Raj Mhatre</a>.
+    </p>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>

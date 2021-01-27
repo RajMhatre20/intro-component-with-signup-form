@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+}
+
+.main_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main_body .left_container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 1.5rem;
+}
+
+.main_body .left_container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.main_body .left_container p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main_body .right_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 1.5rem;
+  width: 50%;
+}
+
+.main_body .right_container .trail {
+  background-color: #6055a5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.main_body .right_container .trail p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main_body .right_container .trail p span {
+  color: white;
+  font-weight: 600;
+}
+
+.main_body .right_container form {
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: white;
+  padding: 2.5rem;
+  -webkit-box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main_body .right_container form .text_field {
+  position: relative;
+}
+
+.main_body .right_container form .text_field input {
+  width: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 1px solid #b9b6d3;
+  padding: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main_body .right_container form .text_field .error_icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  display: none;
+}
+
+.main_body .right_container form .error_text {
+  display: none;
+}
+
+.main_body .right_container form .error_text p {
+  font-style: italic;
+  text-align: right;
+  color: #ff7a7a;
+}
+
+.main_body .right_container form button {
+  background-color: #38cc8c;
+  border-style: none;
+  width: 100%;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  margin: 0.5rem 0;
+  -webkit-box-shadow: 0px 3px #b9b6d3;
+          box-shadow: 0px 3px #b9b6d3;
+  font-size: 15px;
+  outline: none;
+}
+
+.main_body .right_container form button:hover {
+  cursor: pointer;
+  background-color: rgba(56, 204, 140, 0.8);
+}
+
+.main_body .right_container form p {
+  margin: 0.5rem;
+  color: #b9b6d3;
+  font-size: 10px;
+  text-align: center;
+}
+
+.main_body .right_container form p span {
+  color: #ff7a7a;
+  font-weight: bold;
+}
+
+.main_body footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main_body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .main_body .left_container {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .main_body .left_container h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .main_body .left_container p {
+    text-align: center;
+  }
+  .main_body .right_container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
